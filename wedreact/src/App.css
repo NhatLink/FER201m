@@ -43,10 +43,11 @@
 }
 
 .task {
-  background-color: black;
+  /* background-color: black; */
   text-align: left;
   padding: 20px 0px;
   padding-left: 25px;
+  display: flex;
 }
 
 .active {
@@ -88,7 +89,7 @@
   text-decoration: none;
 }
 
-.foot {}
+
 
 .overlay {
   position: fixed;
