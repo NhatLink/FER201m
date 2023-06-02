@@ -4,7 +4,7 @@ export default class Footer extends Component {
         return (
             <footer className='foot'>
                 <nav>
-                <div><p>@Copyright2022</p></div>
+                <div><p>copyright © 2022</p></div>
                 </nav>
             </footer>
         )
