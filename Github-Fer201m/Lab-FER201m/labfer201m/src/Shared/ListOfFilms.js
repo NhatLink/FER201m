@@ -60,7 +60,7 @@ export const films = [
       image: "assets/images/cartoon.jpg",
       title: "Spider-Man: Into the Spider-Verse",
       year: "2018",
-      nation: "USA"
+      nation: ""
     },
     
     // add more films here
