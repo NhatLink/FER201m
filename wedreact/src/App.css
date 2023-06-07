@@ -38,129 +38,67 @@
   }
 }
 
-.container {
-  display: contents;
+.heading {
+  font-size: 4rem;
+  color: white;
+  text-transform: capitalize;
+  margin: 0;
+  padding: 1rem 0;
 }
 
-.task {
-  /* background-color: black; */
-  text-align: left;
-  padding: 20px 0px;
-  padding-left: 25px;
-  display: flex;
+.projects {
+  background: black;
 }
 
-.active {
-  color: aliceblue;
-  padding: 17px 20px;
-  text-decoration: none;
-}
-
-.active:hover {
-  background-color: rgba(255, 255, 0, 0.5);
-}
-
-.column {
-  float: left;
-  width: 32%;
-  margin: 10px;
-  background-size: auto;
-  background-color: rgb(236, 232, 232);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.but {
-  background-color: black;
-}
-
-.but button {
-  background-color: black;
-}
-
-.but a{
+.projects .heading {
   color: white;
 }
 
-.active {
-  text-decoration: none;
+.projects .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
 }
 
-
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
+.projects .box-container .box {
+  cursor: initial;
 }
 
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
+.projects .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
+.projects .box-container .box .image {
+  height: 50rem;
+  overflow: hidden;
 }
 
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 5px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup img {
+.projects .box-container .box .image img {
+  height: 100%;
   width: 100%;
+  transition: .2s linear;
 }
 
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
+.projects .box-container .box .content {
+  display: flex;
+  background: rgb(250, 130, 130);
+  justify-content: center;
 }
 
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size:s 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
+.projects .box-container .box .content .info {
+  padding: 1rem 2rem;
 }
 
-.popup .close:hover {
-  color: #06D85F;
+.projects .box-container .box .content .info h5 {
+  font-size: 2rem;
+  color: var(--black);
+  text-transform: capitalize;
+  text-align: center;
 }
 
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
+.projects .box-container .box .content .info p {
+  font-size: 1.5rem;
+  color: var(--light-color);
+  line-height: 2;
 }
