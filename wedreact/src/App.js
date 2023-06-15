@@ -1,6 +1,6 @@
 import './App.css';
-import Film from './component/Films';
-import ListOfFilms from './Shared/ListOfFilms';
+import Player from './component/Players';
+import ListOfPlayers from './Shared/ListOfPlayers';
 import Navigation from './component/Navigation';
 import Footer from './component/Footer';
 import Detail from './component/Detail';
@@ -13,7 +13,7 @@ function App() {
     <div className='App'>
       <Navigation/>
       <Routes>
-          <Route path='/' element={<Film/>}> 
+          <Route path='/' element={<Player/>}> 
       </Route>
       <Route path='/detail/:id' element={<Detail/>}></Route>
         {/* <Route path='/contact' element={<Contact/>}></Route> */}

@@ -7,10 +7,10 @@ export default function Navigation() {
         <div>
             <nav className='task' style={{ backgroundColor: theme.backgroundColor, color: theme.color }}>
                 <ul>
-                    <a className='active' style={{color: theme.color }} href='#home'>Home</a>
-                    <a className='active' style={{color: theme.color }} href='#news'>New Films</a>
-                    <a className='active' style={{color: theme.color }} href='#about'>Cinema</a>
-                    <a className='active' style={{color: theme.color }} href='#contact'>Ticket</a>
+                    <a className='active' style={{color: theme.color }} href=' '>Home</a>
+                    <a className='active' style={{color: theme.color }} href='#news'>News</a>
+                    <a className='active' style={{color: theme.color }} href='#about'>About</a>
+                    <a className='active' style={{color: theme.color }} href='#contact'>Contact</a>
                 </ul>
                 <div className='switch' style={{ position: 'relative' }}>
                     <a className='switch-mode' href='#' onClick={toggle}
