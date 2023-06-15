@@ -2,7 +2,7 @@ export const films = [
     {
       id: 1,
       image: 'assets/images/spiderman1.jpg',
-      title: "Spierman 1",
+      title: "Spiderman 1",
       year: "2002",
       nation: "USA",
       info: 'Spider-Man I is a 2002 American superhero film, based on the fictional Marvel Comics Spider-Man characters. Peter Parker is a high school student who became a crime-fighting Spider-Man after being bitten by a mutant spider.'

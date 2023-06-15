@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 const themes = {
     dark: {
         backgroundColor: 'black',
-        color: 'white'
+        color: 'red'
     },
     light: {
         backgroundColor: 'white',

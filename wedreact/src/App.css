@@ -80,9 +80,9 @@
 
 .projects .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 2rem;
-  margin: 0 10px;
+  padding: 10px;
 }
 
 .projects .box-container .box {
@@ -94,7 +94,7 @@
 }
 
 .projects .box-container .box .image {
-  height: 50rem;
+  height: 30rem;
   overflow: hidden;
 }
 
@@ -106,43 +106,40 @@
 
 .projects .box-container .box .content {
   /* display: flex; */
-  background: rgb(204, 49, 49);
   justify-content: center;
 }
 
 .projects .box-container .box .content .info {
   padding: 5px 10px;
+  text-align: left;
 }
 
 .projects .box-container .box .content .info h5 {
   font-size: 1.5rem;
   color:black;
   text-transform: capitalize;
-  text-align: center;
+  text-align: left;
   margin: 10px 0;
 }
 
 .projects .box-container .box .content .info p {
   font-size: 1rem;
-  color: rgb(0, 0, 0);
+  color: rgb(0, 51, 255);
   line-height: 2;
   margin: 5px 0;
 }
 .but{
   /* width: 100%; */
-  background-color: #ffffff;
   color: white;
-}
-.but a{
-  text-decoration: none;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  font-size: 1.5rem;
 }
 .but button{
   background-color: #ffffff;
   width: 100%;
-  
+  padding: 10px 0;
+  font-size: 1rem;
+  border-radius: 5px;
+  box-shadow: none;
+  margin: 0;
 }
 .overlay {
   position: fixed;
@@ -221,11 +218,120 @@
   overflow: auto;
 }
 .foot{
+  position: relative;
+  width: 100%;
   bottom: 0;
   left: 0;
-  right: 0;
   background-color: #000000;
-  margin: 0;
+  margin-top: 10px;
   padding: 5px 0;
   color: white;
+}
+/* .contact{
+  margin-bottom: 1rem;
+}
+
+.contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact .row .map {
+  flex: 1 1 30rem;
+  width: 100%;
+}
+.contact .row .map img{
+  width: fit-content;
+}
+.contact .row .info_contact {
+  flex: 1 1 30rem;
+  padding: 2rem;
+  background-color: rgb(189, 223, 255);
+  border-radius: 10px;
+}
+
+.contact .row .info_contact h3 {
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  display: flex;
+}
+
+
+@media (max-width: 450px) {
+  .about .row .content h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 1600px) {
+  .contact .row .info_contact {
+    display: flex;
+  }
+  .contact .row .info_contact_2 {
+    margin: 0 1rem;
+  }
+} */
+
+.container{
+  margin: 10px;
+}
+.container .detail{
+  margin: 5px;
+}
+.container .detail .row{
+  margin: 0 50px;
+}
+.container .detail .row .image_film h3{
+  background-color: red;
+  padding: 20px 0;
+  font-size: 30px;
+  margin: 0;
+  border-radius: 5px;
+  border-width: 2px; /* độ rộng đường viền */
+  border-style: solid; /* kiểu đường viền */
+  border-color: rgb(1, 0, 0); /* màu sắc đường viền */
+}
+.container .detail .row .image_film{
+  /* height: 50rem; */
+  height: 100%;
+}
+.container .detail .row .image_film img{
+width: 100%;
+}
+.container .detail .row .info_film{
+  background-color: rgb(223, 239, 255);
+  margin-left: 20px;
+  text-align: left;
+  border-radius: 10px;
+}
+.container .detail .row .info_film .info_film_2{
+margin: 20px;
+}
+.container .detail .row .info_film .info_film_2 h3{
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+  text-transform: capitalize;
+  padding-left: 1rem;
+  border-left: 8px solid #ff0000;
+}
+.container .detail .row .info_film .info_film_2 p{
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-size: 1rem;
+  color: rgb(0, 0, 0);
+  text-transform: capitalize;
+  padding-left: 1rem;
+}
+@media (max-width: 780px) {
+  .container .detail .row{
+    margin: 0 50px;
+  }
+}
+@media (min-width: 780px) {
+  .container .detail .row{
+    display: flex;
+    margin: 0 50px;
+  }
 }
