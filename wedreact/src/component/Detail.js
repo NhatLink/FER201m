@@ -2,15 +2,24 @@ import { useParams } from 'react-router-dom'
 import { Players } from '../Shared/ListOfPlayers'
 import { ThemeContext } from './ThemeContext'
 import { useContext } from 'react'
-export default function Film() {
+import { useState } from 'react';
+import { Navbar, NavItem, Icon } from 'react-materialize'
+import ModalCase from './ModalCase';
+export default function DetailPlayer() {
     const userName = useParams();
     const { theme, toggle, dark } = useContext(ThemeContext)
     const player = Players.find(obj => {
         return obj.id == userName.id;
     });
+    const [isOpen, setIsOpen] = useState(false);
     //    let cost = film.cost.toLocaleString();
     return (
+
         <div className='container'>
+            <a onClick={() => setIsOpen(true)} className="btn-floating halfway-fab waves-effect waves-light red">
+                <Icon>ondemand_video</Icon>
+            </a>
+            {isOpen && <ModalCase setIsOpen={setIsOpen} player={player} />}
             <div class="heading2">
                 <h5>{player.name}</h5>
             </div>

@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Link } from 'react-router-dom'
 import { ThemeContext } from './ThemeContext'
 import { useContext } from 'react'
-export default function Film() {
+export default function Player() {
   const [player, setPlayer] = useState([]);
   const { theme, toggle, dark } = useContext(ThemeContext)
   return (

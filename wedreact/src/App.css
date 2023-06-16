@@ -58,9 +58,9 @@
   text-decoration: none;
 }
 
-.active:hover {
+/* .active:hover {
   background-color: rgba(255, 0, 0, 0.5);
-}
+} */
 
 .heading {
   font-size: 3rem;
@@ -87,6 +87,7 @@
 .menu{
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
 }
 .menu .brand-logo{
   left: 1rem;
@@ -298,4 +299,42 @@
   margin: 5px;
   color: gray;
   font-size: 1.5rem;
+}
+.contact_head{
+text-align: left;
+}
+
+.contact{
+  border: 1px solid black;
+  padding: 10px;
+  margin-top: 10px;
+}
+.contact .btn{
+  margin-right: 95%;
+}
+.about p{
+  color: black;
+  text-align: left;
+}
+.about li{
+  color: black;
+  text-align: left;
+}
+.about header{
+  color: black;
+  text-align: left;
+}
+.about{
+  margin: 0 15%;
+}
+
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100vw;
+  height: 100vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
