@@ -4,7 +4,7 @@ import axios from 'axios';
 import { toast } from 'react-toastify';
 import '../styles/formAddEdit.css';
 
-const URL = 'https://64a05238ed3c41bdd7a734d0.mockapi.io/TestPE';
+const URL = 'https://649911d179fbe9bcf83ea17c.mockapi.io/api/v1/staffManagement';
 
 const initialState = {
     name: '',

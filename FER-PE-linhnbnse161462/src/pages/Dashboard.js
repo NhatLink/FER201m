@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { Link } from 'react-router-dom';
 import '../styles/dashboard.css';
 
-const URL = 'https://64a05238ed3c41bdd7a734d0.mockapi.io/TestPE';
+const URL = 'https://649911d179fbe9bcf83ea17c.mockapi.io/api/v1/staffManagement';
 
 const Dashboard = () => {
 
